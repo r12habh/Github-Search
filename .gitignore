@@ -4,7 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
-
+package-lock.json
+.prettierrc
+.cache/
+#why package-lock
 # testing
 /coverage
 
