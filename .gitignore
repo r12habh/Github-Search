@@ -10,7 +10,7 @@ package-lock.json
 #why package-lock
 # testing
 /coverage
-
+/dist
 # production
 /build
 
