@@ -2,11 +2,11 @@ import React from "react";
 import User from "./User.js";
 
 const Results = ({ user }) => {
-  console.log(user.login);
   if (user.message) {
     return (
       <div className="card">
         <img
+          id="avatar"
           src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
           alt="Avatar"
         />

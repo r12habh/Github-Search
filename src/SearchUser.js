@@ -13,13 +13,11 @@ const SearchUser = props => {
       .then(result => result.json())
       .then(listdata => {
         let userArray = [];
-        console.log(listdata);
         if (listdata.message) {
           setList([]);
           return;
         } else if (!listdata.items) {
           setList(["No User Found"]);
-          console.log(userList);
           return;
         }
 
@@ -32,7 +30,6 @@ const SearchUser = props => {
           userArray.push(listdata.items[i].login);
         }
         setList(userArray);
-        console.log(userList);
       });
   };
 
@@ -47,13 +44,12 @@ const SearchUser = props => {
 
   const _handleKeyPress = e => {
     if (e.key === "Enter") {
-      console.log("do validate");
       handleSubmit();
     }
   };
 
   return (
-    <div>
+    <div className="user-content">
       <div className="search">
         <input
           autoComplete="off"
@@ -66,9 +62,7 @@ const SearchUser = props => {
         />
         <List handleSubmit={handleSubmit} userlist={userList} />
       </div>
-      <div>
-        <Result user={userData} />
-      </div>
+      {userData !== [] ? <Result user={userData} /> : <h4>Search a user</h4>}
     </div>
   );
 };
