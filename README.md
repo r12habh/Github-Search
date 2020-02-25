@@ -1,3 +1,6 @@
+## Screenshot
+[Screenchot](https://github.com/r12habh/Github-Search/raw/dev/Screenshot.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
