@@ -1,12 +1,20 @@
-.navbar {
-  padding: 20px;
-  background-color: rgb(240, 212, 206);
+#github-logo {
+  width: 60px;
 }
 
-.search {
+.navbar {
+  padding: 10px;
+  background-color: rgb(240, 212, 206);
   display: flex;
-  justify-content: center;
-  padding: 20px 0;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .grid {
@@ -15,9 +23,9 @@
   padding: 10px;
 }
 
-img {
-  padding-left: 29px;
-  padding-top: 29px;
+#avatar {
+  /* padding-left: 29px;
+  padding-top: 29px; */
   width: 290px;
   height: 290px;
 }
@@ -25,7 +33,8 @@ img {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 28%;
+  width: 290px;
+  /* no random numbers */
 }
 
 .card:hover {
@@ -36,10 +45,42 @@ img {
   padding: 2px 16px;
 }
 
-input {
+.myUL li {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+.myUL li:hover:not(.header) {
+  background-color: #eee;
+}
+
+.myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#input {
+  background-image: url("https://img.icons8.com/metro/26/000000/search.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
   width: 100%;
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
   font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#input .myUL li {
+  box-sizing: border-box;
+}
+
+span {
+  width: 20px;
 }
